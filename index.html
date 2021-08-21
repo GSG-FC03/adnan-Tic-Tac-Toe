@@ -4,53 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Tic Toc Toe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Score bar that contains user, computer score and round number -->
-    <section class="score">
-        <!--  user score -->
-        <div class="score-container">
-           <p class="score-container-name">My Score</p> 
-           <p class="score-container-number">3</p>
-        </div>
-
-        <!--  Round number -->
-        <div class="score-round">
-            <p class="score-round-name">Round</p> 
-            <p class="score-round-number">6</p>
-        </div>
-
-        <!--  Computer score -->
-        <div class="score-container">
-           <p class="score-container-name">Computer Score</p> 
-           <p class="score-container-number">3</p>
-
-        </div>
-    </section>
-
-        <!-- Play ground: Grid with 9 spaces -->
-    <section class="grid">
-        <div class="grid-top">
-            <div class="grid-top-right"></div>
-            <div class="grid-top-center"></div>
-            <div class="grid-top-left"></div>
-        </div>
-        <div class="grid-middle">
-            <div class="grid-middle-right"></div>
-            <div class="grid-middle-center"></div>
-            <div class="grid-middle-left"></div>
-        </div>
-
-        <div class="grid-bottom">
-            <div class="grid-bottom-right"></div>
-            <div class="grid-bottom-center"></div>
-            <div class="grid-bottom-left"></div>
-        </div>
     
-    </section>
-    
+    <!-- Play ground: Grid with 9 spaces -->
+    <section class="board" id="board">
+    <div class="cell" id="data-cell"></div>
+    <div class="cell" id="data-cell"></div>
+    <div class="cell" id="data-cell"></div>
+    <div class="cell" id="data-cell"></div>
+    <div class="cell" id="data-cell"></div>
+    <div class="cell" id="data-cell"></div>
+    <div class="cell" id="data-cell"></div>
+    <div class="cell" id="data-cell"></div>
+    <div class="cell" id="data-cell"></div>
+</section>
+  
+<!-- winning message popup -->
+<section class="winning-message" id="winningMessage">
+    <div class="data-winning-message-text"></div>
+    <button id="restartButton">Restart</button>
+</section>
 </body>
-<script src="./script.js"></script>
 </html>
